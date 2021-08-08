@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'rapoo';
+  title = 'rapoo - It solutions |  Corporate template';
+
+  
+
+  ngOnInit(){
+    
+  }
 }
