@@ -1,0 +1,13 @@
+step 1. create new angular app by giving command "ng new myApp"
+step 2: run app in the browser by " ng serve --open"
+step 3: create the components depending on your html page(menu/section)  "ng g c component"
+step 4: copy all the css, js, images of the template into angular src/assets folder
+
+
+
+
+Note: if you wanna create any external link like bootstrap or font awesome , then use the following command:
+      ng add @ng-bootstrap/ng-bootstrap
+
+// install themify icons
+npm install --save @icon/themify-icons
