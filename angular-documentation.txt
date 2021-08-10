@@ -11,3 +11,12 @@ Note: if you wanna create any external link like bootstrap or font awesome , the
 
 // install themify icons
 npm install --save @icon/themify-icons
+
+//install font awesome
+npm install @fortawesome/fontawesome-free --save.
+
+//how to bind angular value to html inline style
+[ngStyle]="{'background': color}"
+
+//how to bind angular multiple value to html inline style
+[ngStyle]="{'background': background, 'color': color}"
