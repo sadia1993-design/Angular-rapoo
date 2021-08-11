@@ -1,6 +1,5 @@
 import { Component, OnInit    } from '@angular/core';
 import * as $ from 'jquery';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,7 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit(){
     
   }
-
+  
   ngAfterViewInit(){
     $(document).ready(function(){
       $("p").click(function(){
