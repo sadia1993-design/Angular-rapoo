@@ -20,3 +20,68 @@ npm install @fortawesome/fontawesome-free --save.
 
 //how to bind angular multiple value to html inline style
 [ngStyle]="{'background': background, 'color': color}"
+
+
+// install jquery
+Step 1: Create a demo angular 2 app
+
+ng new jquery-demo
+you can use any name. Now check if it is working by running below cmd.(Now, make sure that you are pointing to 'jquery-demo' if not use cd command )
+
+ng serve
+you will see "app works!" on browser.
+
+Step 2: Install Bower (A package manager for the web)
+
+Run this command on cli (make sure that you are pointing to 'jquery-demo' if not use cd command ):
+
+npm i -g bower --save
+Now after successful installation of bower, Create a 'bower.json' file by using below command:
+
+bower init
+It will ask for inputs, just press enter for all if you want default values and at the end type "Yes" when it'll ask "Looks good?"
+
+Now you can see a new file (bower.json) in folder "jquery-demo". You can find more info on https://bower.io/
+
+Step 3: Install jquery
+
+Run this command
+
+bower install jquery --save
+It will create a new folder (bower_components) which will contain jquery installation folder. Now you have jquery installed in 'bower_components' folder.
+
+Step 4: Add jquery location in 'angular-cli.json' file
+
+Open 'angular-cli.json' file (present in 'jquery-demo' folder) and add jquery location in "scripts". It will look like this:
+
+"scripts": ["../bower_components/jquery/dist/jquery.min.js"
+              ]
+Step 5: Write simple jquery code for testing
+
+Open 'app.component.html' file and add a simple code line, The file will look like this:
+
+<h1>
+  {{title}}
+</h1>
+<p>If you click on me, I will disappear.</p>
+Now Open 'app.component.ts' file and add jquery variable declaration and code for 'p' tag. You should use lifecycle hook ngAfterViewInit() also. After making changes the file will look like this:
+
+import { Component, AfterViewInit } from '@angular/core';
+declare var $:any;
+
+@Component({
+     selector: 'app-root',
+     templateUrl: './app.component.html',
+     styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+     title = 'app works!';
+
+     ngAfterViewInit(){
+           $(document).ready(function(){
+             $("p").click(function(){
+             $(this).hide();
+             });
+           });
+     }
+}

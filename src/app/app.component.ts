@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit  } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +13,12 @@ export class AppComponent {
   ngOnInit(){
     
   }
+
+  ngAfterViewInit(){
+    $(document).ready(function(){
+      $("p").click(function(){
+      $(this).hide();
+      });
+    });
+}
 }

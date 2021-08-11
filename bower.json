@@ -1,0 +1,17 @@
+{
+  "name": "rapoo",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/sadia1993-design/Angular-rapoo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
