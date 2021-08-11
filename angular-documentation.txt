@@ -50,3 +50,19 @@ ngOnInit() {
 jQueryExampleModal() { // to show a modal with dummyId
    $('#dummyId').modal('show');
 }
+
+
+// install animate css
+Install animate.css via npm npm install animate.css --save
+In your .angular-cli.json add in "../node_modules/animate.css/animate.css", - or if you're using Angular 6+, in your angular.json add in "node_modules/animate.css/animate.css", - into your "styles" array (see examples below).
+Restart your local server and refresh your browser. ng serve
+Angular 4 & 5 Example:
+
+"styles": [
+    "../node_modules/animate.css/animate.css"
+  ],
+Angular 6+ Example:
+
+"styles": [
+    "node_modules/animate.css/animate.css"
+  ],
