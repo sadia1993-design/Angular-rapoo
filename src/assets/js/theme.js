@@ -1,15 +1,13 @@
 (function($) {
 'use strict';
     
-       
-  // PRELOADER
-    $(window).on('load', function() {
-        $('#page-loader').fadeOut('slow', function() {
-            $(this).remove();
-        });
-    });
 
-    
+    try {
+      window.Popper = require('popper.js').default;
+      window.jQuery = window.$ = require('jquery');
+      require('jquery.easing'); // dat works :3
+  } catch (e) {}
+
   // SCROLL TO TOP
   
   $(window).on('scroll', function () {

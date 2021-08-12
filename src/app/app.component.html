@@ -6,6 +6,11 @@
 </head>
 
 <body id="top-header">
+    <!-- LOADER TEMPLATE -->
+    <div id="page-loader">
+        <div class="loader-icon fa fa-spin colored-border"></div>
+    </div>
+
    <router-outlet></router-outlet>
    
   
@@ -128,8 +133,13 @@
 
 
     <!--  Page Scroll to Top  -->
+    
+    <a class="scroll-to-top js-scroll-trigger" routerLink="/home">
+        <i class="fa fa-angle-up"></i>
+    </a>
 
 
+    
   </body>
 </html>
 

@@ -19,10 +19,13 @@ export class AppComponent implements OnInit {
 
   // for jquery
   ngAfterViewInit(){
-    $(document).ready(function(){
-      $("p").click(function(){
-      $("p").hide();
+    $(window).on('load', function() {
+      $('#page-loader').fadeOut('slow', function() {
+          $(this).remove();
       });
-    });
+  });
+
+ 
+
 }
 }
