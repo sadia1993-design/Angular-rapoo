@@ -113,7 +113,7 @@
               "node_modules/slick-carousel/slick/slick.min.js",
               "src/assets/plugins/google-map/gmap3.min.js",
               "src/assets/js/jquery.easing.1.3.js",
-              "https://maps.googleapis.com/maps/api/js?key=AIzaSyDwIQh7LGryQdDDi-A603lR8NqiF3R_ycA",
+              "https://maps.googleapis.com/maps/api/js?key=AIzaSyBEmGuIceexKma4Q6yyRD8M-KS5vbPtUVM",
               "src/assets/js/theme.js"
             ]
           }
