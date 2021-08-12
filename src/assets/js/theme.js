@@ -35,14 +35,14 @@ $('.slick_blog').slick({
     /* ----------------------------------------------------------- */
 
 
-    // $(window).on('scroll', function () {
-    //     if ($(window).scrollTop() > 70) {
-    //         $('.site-navigation,.trans-navigation').addClass('header-white');
-    //     } else {
-    //         $('.site-navigation,.trans-navigation').removeClass('header-white');
-    //     }
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 70) {
+            $('.site-navigation,.trans-navigation').addClass('header-white');
+        } else {
+            $('.site-navigation,.trans-navigation').removeClass('header-white');
+        }
 
-    // });
+    });
 
  
     
@@ -50,13 +50,13 @@ $('.slick_blog').slick({
 // jQuery for page scrolling feature - requires jQuery Easing plugin
     
     
-    // $('a.js-scroll-trigger').on('click', function(event) {
-    //     var $anchor = $(this);
-    //     $('html, body').stop().animate({
-    //         scrollTop: $($anchor.attr('href')).offset().top
-    //     }, 1500, 'ease');
-    //     event.preventDefault();
-    // });
+    $('a.js-scroll-trigger').on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'ease');
+        event.preventDefault();
+    });
 
 
   // Closes responsive menu when a scroll trigger link is clicked
