@@ -10,4 +10,7 @@ export class ScrollToComponent implements OnInit {
   
   ngOnInit() {}
 
+  scrollTop(){
+    alert("hello")
+  }
 }
