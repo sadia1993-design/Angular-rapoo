@@ -1,6 +1,7 @@
 import { Component, OnInit , Inject, HostListener} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 
+
 @Component({
   selector: 'app-scroll-to',
   templateUrl: './scroll-to.component.html',
@@ -11,6 +12,10 @@ export class ScrollToComponent implements OnInit {
   ngOnInit() {}
 
   scrollTop(){
-    alert("hello")
+    window.scrollTo(0, 0);
   }
+
+  
+  
+
 }
