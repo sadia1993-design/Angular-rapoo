@@ -1,5 +1,6 @@
 import { Component, OnInit    } from '@angular/core';
 import * as $ from 'jquery';
+import {} from 'googlemaps';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +8,17 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
-  ngOnInit(){
+  
+  
+  OnInit(){
+    
     
   }
+  ngOnInit(): void {
+    
+ }
 
-  // for js
-  onClick() {
-    alert("hello");
-  }
+  
 
   // for jquery
   ngAfterViewInit(){
