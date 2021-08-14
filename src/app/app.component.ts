@@ -17,7 +17,9 @@ export class AppComponent implements OnInit {
    }
 
   
-
+  onActive(){
+    window.scroll(0,0);
+  }
   // for jquery
   ngAfterViewInit(){
     

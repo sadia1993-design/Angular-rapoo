@@ -9,3 +9,6 @@
     opacity: 1;
     transition: all .2s ease-in-out;
    }
+   .scroll-to-top i{
+       color: aliceblue;
+   }
