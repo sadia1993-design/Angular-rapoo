@@ -8,15 +8,7 @@
       require('jquery.easing'); // dat works :3
   } catch (e) {}
 
-  // SCROLL TO TOP
-  
-  $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 70) {
-        $('.scroll-to-top').addClass('reveal');
-    } else {
-        $('.scroll-to-top').removeClass('reveal');
-    }
-});
+ 
  
 // blog slider
 $('.slick_blog').slick({
@@ -45,18 +37,6 @@ $('.slick_blog').slick({
     });
 
  
-    
-  // Smooth scrolling using jQuery easing
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-    
-    
-    $('a.js-scroll-trigger').on('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'ease');
-        event.preventDefault();
-    });
 
 
   // Closes responsive menu when a scroll trigger link is clicked
