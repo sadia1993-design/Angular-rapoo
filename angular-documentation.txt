@@ -79,4 +79,48 @@ Angular 6+ Example:
         </button>
       </div>
 
-3. 
+3. put bellow css in the scroll css file
+
+    .scroll-to-top {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      opacity: 1;
+      background-color: #21c87a;
+      transition: all .2s ease-in-out;
+      border-radius: 50%;
+    }
+    .scroll-to-top i{
+        color: #fff;
+    }
+    .scroll-to-top button{
+        padding: 13px 18px;
+    }
+    .show-scrollTop {
+      opacity: 1;
+      transition: all .2s ease-in-out;
+    }
+
+
+4. then in the scroll ts file, put below code
+
+      import { Component, OnInit , Inject, HostListener} from '@angular/core';
+      import { DOCUMENT } from '@angular/common';
+
+
+      @Component({
+        selector: 'app-scroll-to',
+        templateUrl: './scroll-to.component.html',
+        styleUrls: ['./scroll-to.component.css']
+      })
+      export class ScrollToComponent implements OnInit {
+        
+        ngOnInit() {}
+
+        scrollTop(){
+          window.scrollTo(0, 0);
+        }
+
+      }
+
+5. Now, in your app component html file, put this <app-scroll-to></app-scroll-to>

@@ -5,7 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ScrollToComponent } from './scroll-to/scroll-to.component';
+import { ScrollToComponent } from './Component/scroll-to/scroll-to.component';
 
 
 
