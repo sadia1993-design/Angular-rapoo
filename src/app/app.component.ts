@@ -1,6 +1,6 @@
-import { Component, OnInit    } from '@angular/core';
+import { ResourceLoader } from '@angular/compiler';
+import { Component, OnInit    } from '@angular/core'
 import * as $ from 'jquery';
-import {} from 'googlemaps';
 
 @Component({
   selector: 'app-root',
@@ -10,25 +10,21 @@ import {} from 'googlemaps';
 export class AppComponent implements OnInit {
   
   
-  OnInit(){
-    
-    
-  }
+ 
   ngOnInit(): void {
     
- }
+   }
 
   
 
   // for jquery
-  ngAfterViewInit(){
-    $(window).on('load', function() {
-      $('#page-loader').fadeOut('slow', function() {
-          $(this).remove();
-      });
-  });
+  // ngAfterViewInit(){
+  //   $(window).on('load', function() {
+  //     $('#page-loader').fadeOut('slow', function() {
+  //         $(this).remove();
+  //     });
+  // });
 
  
 
-}
 }
