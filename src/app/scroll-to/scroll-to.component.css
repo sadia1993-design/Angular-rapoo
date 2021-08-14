@@ -2,13 +2,18 @@
     position: fixed;
     bottom: 15px;
     right: 15px;
-    opacity: 0;
+    opacity: 1;
+    background-color: #21c87a;
     transition: all .2s ease-in-out;
+    border-radius: 50%;
+   }
+   .scroll-to-top i{
+       color: #fff;
+   }
+   .scroll-to-top button{
+      padding: 13px 18px;
    }
    .show-scrollTop {
     opacity: 1;
     transition: all .2s ease-in-out;
-   }
-   .scroll-to-top i{
-       color: aliceblue;
    }
