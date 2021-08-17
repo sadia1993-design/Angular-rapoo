@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -19,7 +21,10 @@ import { ScrollToComponent } from './Component/scroll-to/scroll-to.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
